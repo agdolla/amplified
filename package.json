@@ -1,0 +1,77 @@
+{
+  "version": "0.0.0",
+  "name": "amplified",
+  "author": "Kevin Wolf <hi@kevinwolf.dev>",
+  "description": "AWS Amplify libraries wrapped with React hooks",
+  "license": "MIT",
+  "repository": "kevinwolfdev/amplified",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "directories": {
+    "lib": "./dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "test": "echo Tests disabled",
+    "prebuild": "rm -rf ./dist",
+    "build": "tsc",
+    "validate": "yarn lint && yarn test && yarn build",
+    "release": "auto shipit"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@auto-it/all-contributors": "^9.30.5",
+    "@auto-it/first-time-contributor": "^9.30.5",
+    "@kevinwolf/eslint-config": "^0.2.4",
+    "@types/react": "^16.9.34",
+    "all-contributors-cli": "^6.14.2",
+    "auto": "^9.30.5",
+    "doctoc": "^1.4.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "react": "^16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "README.md": [
+      "doctoc",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "auto": {
+    "plugins": [
+      "all-contributors",
+      "first-time-contributor",
+      "npm",
+      "released"
+    ],
+    "labels": [
+      {
+        "name": "minor-graduate",
+        "changelogTitle": "🚀 Enhancement",
+        "description": "Increment the major version when merged",
+        "releaseType": "major"
+      }
+    ]
+  }
+}

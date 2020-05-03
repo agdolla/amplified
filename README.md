@@ -461,9 +461,14 @@ An async callback is a hook that receives a promise as an argument and returns a
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://kevinwolf.dev"><img src="https://avatars2.githubusercontent.com/u/3157426?v=4" width="100px;" alt=""/><br /><sub><b>Kevin Wolf</b></sub></a><br /><a href="https://github.com/kevinwolfdev/amplified/commits?author=kevinwolfdev" title="Documentation">📖</a> <a href="https://github.com/kevinwolfdev/amplified/commits?author=kevinwolfdev" title="Code">💻</a> <a href="#infra-kevinwolfdev" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+  </tr>
+</table>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## Contributing

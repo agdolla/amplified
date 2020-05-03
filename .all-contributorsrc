@@ -9,6 +9,18 @@
   "imageSize": 100,
   "commit": false,
   "commitConvention": "none",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "kevinwolfdev",
+      "name": "Kevin Wolf",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3157426?v=4",
+      "profile": "https://kevinwolf.dev",
+      "contributions": [
+        "doc",
+        "code",
+        "infra"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }

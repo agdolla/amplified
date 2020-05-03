@@ -24,7 +24,12 @@
     "validate": "yarn lint && yarn test && yarn build",
     "release": "auto shipit"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@aws-amplify/core": "^3.2.6",
+    "amazon-cognito-identity-js": "^4.2.3",
+    "aws-amplify": "^3.0.10",
+    "swr": "^0.2.0"
+  },
   "peerDependencies": {
     "react": "*"
   },

@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "name": "amplified",
+  "author": "Kevin Wolf <hi@kevinwolf.dev>",
+  "description": "AWS Amplify libraries wrapped with React hooks",
+  "license": "MIT",
+  "repository": "kevinwolfdev/amplified",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "directories": {
+    "lib": "./dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc --build",
+    "test": "echo Tests disabled",
+    "lint": "eslint . --ext .ts,.tsx",
+    "validate": "yarn build && yarn test && yarn lint",
+    "prepublishOnly": "cp ../../README.md ./",
+    "dev": "tsc --build --watch"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "dependencies": {
+    "@aws-amplify/core": "^3.2.6",
+    "amazon-cognito-identity-js": "^4.2.3",
+    "aws-amplify": "^3.0.10",
+    "swr": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "react": "^16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "rules": {
+    "jsx-a11y/anchor-is-valid": "off",
+    "import/no-unresolved": ["error", { "ignore": ["aws-exports"] }]
+  }
+}

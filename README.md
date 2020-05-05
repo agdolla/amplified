@@ -49,6 +49,7 @@ ReactDOM.render(
   - [Data fetching techniques](#data-fetching-techniques)
     - [Enabling Suspense](#enabling-suspense)
   - [Async callbacks](#async-callbacks)
+- [Examples](#examples)
 - [Contributors](#contributors)
 - [Contributing](#contributing)
 - [Release](#release)
@@ -456,6 +457,10 @@ An async callback is a hook that receives a promise as an argument and returns a
 3. `error`: error thrown from the promise, if it failed
 4. `wasSuccessful`: a boolean indicating if the promise execution was successful
 
+## Examples
+
+- [create-react-app](./examples/cra)
+
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -469,6 +474,7 @@ An async callback is a hook that receives a promise as an argument and returns a
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## Contributing

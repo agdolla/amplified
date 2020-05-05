@@ -27,4 +27,4 @@ jobs:
       - name: Validate
         run: |
           yarn install --frozen-lockfile
-          yarn validate
+          yarn lerna run validate --stream --no-private

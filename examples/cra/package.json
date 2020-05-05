@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "name": "cra-example",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "react-app-rewired build",
+    "test": "echo Tests disabled",
+    "lint": "eslint . --ext .ts,.tsx",
+    "validate": "yarn build && yarn test && yarn lint",
+    "dev": "CI=true react-app-rewired start",
+    "amplify": "amplify"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.12",
+    "@material-ui/lab": "^4.0.0-alpha.51",
+    "amplified": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "customize-cra": "^0.9.1",
+    "customize-cra-react-refresh": "^1.0.1",
+    "react-app-rewired": "^2.1.5",
+    "typescript": "~3.8.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
